@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Hirfa</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main" class="container page auth-page">
+        <div class="card auth-card">
+            <h1>Welcome back</h1>
+            <p class="muted">Log in to check out, track your orders and write reviews.</p>
+
+            <form id="login-form" class="form" novalidate>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" name="password" autocomplete="current-password" required>
+                        <button type="button" class="link-button" data-toggle-password="password" aria-pressed="false">Show</button>
+                    </div>
+                </div>
+                <div id="form-message" class="alert" hidden></div>
+                <button type="submit" class="btn btn--large btn--block">Log in</button>
+            </form>
+
+            <p class="center">New to Hirfa? <a id="register-link" href="register.html">Create an account</a></p>
+        </div>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

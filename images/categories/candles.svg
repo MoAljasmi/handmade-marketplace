@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-label="Hand-poured candles">
+  <ellipse cx="120" cy="162" rx="92" ry="8" fill="#E6DCD0"/>
+  <g transform="translate(54 70)">
+    <path d="M0 10h56v76a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6Z" fill="#B5532C"/>
+    <rect x="0" y="38" width="56" height="26" fill="#FBF7F2"/>
+    <path d="M8 51h40" stroke="#C9A227" stroke-width="2" stroke-dasharray="4 3"/>
+    <ellipse cx="28" cy="10" rx="28" ry="6" fill="#F4EACF"/>
+    <path d="M28 10V0" stroke="#2B2420" stroke-width="2"/>
+    <path d="M28-24c8 8 8 16 0 22-8-6-8-14 0-22Z" fill="#E9A23B"/>
+    <path d="M28-14c3 3 3 7 0 10-3-3-3-7 0-10Z" fill="#FFF3C4"/>
+  </g>
+  <g transform="translate(124 50)">
+    <rect x="0" y="0" width="34" height="112" rx="4" fill="#F4EACF"/>
+    <path d="M0 18h34M0 94h34" stroke="#E2D2A6" stroke-width="2"/>
+    <path d="M17 0v-10" stroke="#2B2420" stroke-width="2"/>
+    <path d="M17-34c7 7 7 14 0 20-7-6-7-13 0-20Z" fill="#E9A23B"/>
+    <path d="M17-25c3 3 3 6 0 9-3-3-3-6 0-9Z" fill="#FFF3C4"/>
+  </g>
+  <g transform="translate(166 108)">
+    <path d="M0 8c0 22 8 38 22 38s22-16 22-38Z" fill="#1F5F5B"/>
+    <ellipse cx="22" cy="8" rx="22" ry="5" fill="#F4EACF"/>
+    <path d="M22 8V0" stroke="#2B2420" stroke-width="2"/>
+    <path d="M22-20c6 6 6 12 0 17-6-5-6-11 0-17Z" fill="#E9A23B"/>
+  </g>
+</svg>

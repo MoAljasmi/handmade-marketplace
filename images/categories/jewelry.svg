@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-label="Handmade jewelry">
+  <path d="M40 30c10 60 50 88 80 88s70-28 80-88" fill="none" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#C9A227">
+    <circle cx="52" cy="66" r="4"/><circle cx="66" cy="86" r="4"/><circle cx="84" cy="102" r="4"/>
+    <circle cx="156" cy="102" r="4"/><circle cx="174" cy="86" r="4"/><circle cx="188" cy="66" r="4"/>
+  </g>
+  <path d="M120 118v14" stroke="#C9A227" stroke-width="3"/>
+  <circle cx="120" cy="146" r="14" fill="#FBF7F2" stroke="#E6DCD0" stroke-width="2"/>
+  <circle cx="115" cy="141" r="4" fill="#fff"/>
+  <g transform="translate(176 120)">
+    <ellipse cx="0" cy="22" rx="24" ry="20" fill="none" stroke="#9C9CA6" stroke-width="7"/>
+    <path d="M-10 0l10-12 10 12-10 8Z" fill="#1F5F5B"/>
+    <path d="M-10 0h20" stroke="#174845" stroke-width="2"/>
+  </g>
+  <g transform="translate(58 136)">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#B5532C" stroke-width="6" stroke-dasharray="6 4"/>
+  </g>
+</svg>

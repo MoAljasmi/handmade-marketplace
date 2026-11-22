@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-label="Handmade accessories">
+  <ellipse cx="120" cy="164" rx="90" ry="7" fill="#E6DCD0"/>
+  <path d="M84 62c0-28 14-42 30-42s30 14 30 42" fill="none" stroke="#8F3F1F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M62 58h104l10 100H52Z" fill="#B5532C"/>
+  <rect x="56" y="92" width="116" height="30" fill="#2B2420"/>
+  <path d="M60 107l8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10 8 10 8-10" fill="none" stroke="#C9A227" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M60 98h112M60 116h112" stroke="#FBF7F2" stroke-width="2" stroke-dasharray="3 5"/>
+  <g transform="translate(168 112)">
+    <rect x="0" y="0" width="52" height="38" rx="5" fill="#1F5F5B"/>
+    <path d="M0 14h52" stroke="#174845" stroke-width="2"/>
+    <circle cx="44" cy="22" r="3" fill="#C9A227"/>
+    <path d="M6 6h20" stroke="#F4EACF" stroke-width="2" stroke-dasharray="2 3"/>
+  </g>
+  <path d="M28 70c10 10 6 30 16 44s4 30 12 40" fill="none" stroke="#7A5C99" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+</svg>

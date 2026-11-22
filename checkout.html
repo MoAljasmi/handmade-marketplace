@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Hirfa</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main" class="container page">
+        <div class="page-head">
+            <h1>Checkout</h1>
+            <p class="muted">Delivery details and payment method.</p>
+        </div>
+
+        <div id="checkout-layout" class="checkout-layout">
+            <form id="checkout-form" class="card form" novalidate>
+                <h2>Delivery details</h2>
+                <div class="field">
+                    <label for="receiver">Full name</label>
+                    <input type="text" id="receiver" name="receiver" autocomplete="name" required minlength="3" maxlength="100">
+                </div>
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="phone">Mobile number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="050 123 4567" required>
+                    </div>
+                    <div class="field">
+                        <label for="city">Emirate</label>
+                        <select id="city" name="city" required>
+                            <option value="">Choose an emirate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" autocomplete="street-address" placeholder="Area, street, building and flat number" required maxlength="300"></textarea>
+                </div>
+                <div class="field">
+                    <label for="notes">Order notes (optional)</label>
+                    <textarea id="notes" name="notes" rows="2" maxlength="500" placeholder="For example, the name to engrave on a name plate"></textarea>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox" id="saveAddress" name="saveAddress" checked>
+                    <span>Save these details to my account</span>
+                </label>
+
+                <h2>Payment method</h2>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cash_on_delivery" checked>
+                        <span><strong>Cash on delivery</strong><br><span class="muted">Pay the courier in cash.</span></span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="card_on_delivery">
+                        <span><strong>Card on delivery</strong><br><span class="muted">The courier brings a card machine.</span></span>
+                    </label>
+                </div>
+                <p class="hint">We never ask for card numbers on this website. Online card payment through a payment gateway is planned for a later version.</p>
+
+                <div id="checkout-message" class="alert" hidden></div>
+                <button type="submit" id="place-order" class="btn btn--large btn--block">Place order</button>
+            </form>
+
+            <aside class="card order-summary" aria-labelledby="order-summary-title">
+                <h2 id="order-summary-title">Your order</h2>
+                <ul id="summary-items" class="summary-list"></ul>
+                <div id="summary-totals"></div>
+                <a href="cart.html" class="text-link">Edit cart</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

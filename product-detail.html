@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Hirfa</title>
+    <meta name="description" content="Handmade product details, price, stock and verified buyer reviews.">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main" class="container page">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+            <a href="products.html">Shop</a> <span aria-hidden="true">/</span>
+            <span id="breadcrumb-category"></span> <span aria-hidden="true">/</span>
+            <span id="breadcrumb-name" aria-current="page"></span>
+        </nav>
+
+        <section id="product" class="product-detail" aria-live="polite">
+            <div class="product-detail__media skeleton-block"></div>
+            <div class="product-detail__info">
+                <div class="skeleton-line"></div>
+                <div class="skeleton-line skeleton-line--wide"></div>
+                <div class="skeleton-line"></div>
+            </div>
+        </section>
+
+        <section id="reviews-section" class="section reviews">
+            <h2>Customer reviews</h2>
+            <div class="reviews__layout">
+                <div>
+                    <div id="review-summary" class="review-summary card"></div>
+                    <div id="review-form-box" class="card"></div>
+                </div>
+                <div id="review-list" class="review-list"></div>
+            </div>
+        </section>
+
+        <section id="related-section" class="section">
+            <h2>More from this category</h2>
+            <div id="related-grid" class="product-grid"></div>
+        </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

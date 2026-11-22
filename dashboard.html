@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard | Hirfa</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main" class="container page">
+        <div class="page-head page-head--row">
+            <div>
+                <h1>Analytics dashboard</h1>
+                <p class="muted">Sales, products and customer feedback. <span id="updated-at"></span></p>
+            </div>
+            <button type="button" id="refresh" class="btn btn--ghost">Refresh</button>
+        </div>
+
+        <div id="dashboard">
+            <section id="kpis" class="kpi-grid" aria-label="Key figures"></section>
+
+            <div class="chart-grid">
+                <section class="card chart-card">
+                    <h2>Revenue by category</h2>
+                    <div class="chart-box"><canvas id="chart-category" aria-label="Bar chart of revenue by category" role="img"></canvas></div>
+                </section>
+                <section class="card chart-card">
+                    <h2>Revenue, last 14 days</h2>
+                    <div class="chart-box"><canvas id="chart-days" aria-label="Line chart of daily revenue" role="img"></canvas></div>
+                </section>
+                <section class="card chart-card">
+                    <h2>Orders by status</h2>
+                    <div class="chart-box"><canvas id="chart-status" aria-label="Doughnut chart of orders by status" role="img"></canvas></div>
+                </section>
+            </div>
+
+            <div class="table-grid">
+                <section class="card">
+                    <h2>Best sellers</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th scope="col">Product</th><th scope="col">Units</th><th scope="col">Revenue</th></tr></thead>
+                            <tbody id="top-products"></tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Top rated</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th scope="col">Product</th><th scope="col">Rating</th><th scope="col">Reviews</th></tr></thead>
+                            <tbody id="top-rated"></tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="card table-grid__wide">
+                    <h2>Low stock</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th scope="col">Product</th><th scope="col">In stock</th><th scope="col">Restock</th></tr></thead>
+                            <tbody id="low-stock"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
