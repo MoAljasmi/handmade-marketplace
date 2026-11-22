@@ -11,5 +11,5 @@
  *
  * NEVER put the service_role / secret key or the database password here.
  */
-const SUPABASE_URL = "YOUR_PROJECT_URL";
-const SUPABASE_KEY = "YOUR_PUBLISHABLE_OR_ANON_KEY";
+const SUPABASE_URL = "https://vsalkwmrzvlamzrisreq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_y4jQaAXUBgBsigUpFG9kxw_r6bOi2Mi";
